@@ -1,0 +1,29 @@
+<!-- Sección de la calculadora -->
+<div id="calculadoraAll" class="calculadora">
+    <div id="calculadora">
+      <h1>Calculadora de Notas</h1>
+      <div id="datosAlumno">
+        <h2>Datos del alumno</h2>
+        <div class="caja_alumno" id="datos_alumno">
+          <form id="alumnoForm">
+            <label>Nombre del alumno</label>
+            <input id="alumno" class="dataStudentName" type="text" />
+            <label>Nota de ejercicios </label>
+            <input id="notaEj" class="dataStudent" type="number" min="0" max="10" step="0.01" />
+            <label>Nota del examen teorico </label>
+            <input id="notaTe" class="dataStudent" type="number" min="0" max="10" step="0.01" />
+            <label>Nota del examen practico </label>
+            <input id="notaPr" class="dataStudent" type="number" min="0" max="10" step="0.01" />
+            <label>Nota del proyecto </label>
+            <input id="notaPro" class="dataStudent" type="number" min="0" max="10" step="0.01" />
+            <hr class="lineStudent" />
+            <div id="notaMedia" class="studentMedia"></div>
+          </form>
+        </div>
+        <div id="buttons">
+          <input id="calcularButton" type="button" value="Calcular">
+          <input id="deleteButton" type="button" value="Borrar">
+        </div>
+      </div>
+    </div>
+  </div>

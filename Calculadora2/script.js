@@ -41,7 +41,7 @@ document.querySelectorAll(".dataStudent").forEach(function(nota) {
 function showGrade(nombre,nota) {
     let divGrade = document.querySelector("#notaMedia");
     divGrade.classList.remove("aprobado", "suspendido");
-    let aprobadoSusp = (nota > 5 ? "aprobado" : "suspendido")
+    let aprobadoSusp = (nota >= 5 ? "aprobado" : "suspendido")
     divGrade.classList.add(aprobadoSusp)
     divGrade.innerHTML = "<h2> Has " + aprobadoSusp +" "+ nombre + " con una nota de " + nota + "</h2>";
 };
@@ -62,7 +62,7 @@ function media(nota1, nota2, nota3, nota4) {
 // SECCION PARA CREAR LA TABLA ***************************************************************************************
 function createTableBody(nombre, nota1, nota2, nota3, nota4, media) {
     var tbody = document.querySelector("#alumnoDatos");
-    var clase = media > 5 ? 'aprobado-tr' : 'suspendido-tr';
+    var clase = media >= 5 ? 'aprobado-tr' : 'suspendido-tr';
     var nuevaFilaHTML = '<tr class="'+ clase +'">' +
         '<td>' + nombre + '</td>' +
         '<td>' + nota1 + '</td>' +
@@ -107,6 +107,7 @@ document.querySelector("#verHistorial").addEventListener("click", function (even
             document.querySelector("#tableCalculator").innerHTML = `<i class="fas fa-calculator"></i>`
         } else {
             document.querySelector("#exportTable").classList.toggle("hide");
+            document.querySelector("#verHistorial").textContent = "Ver historial"
             document.querySelector("#tableCalculator").innerHTML = `<i class="fa fa-table" aria-hidden="true"></i>`
         }
     }, 500);

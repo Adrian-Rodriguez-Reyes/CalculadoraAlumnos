@@ -1,0 +1,183 @@
+/****************************** ESTILOS DEL BODY ******************************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/****************************** ESTILOS CALCULADORA ******************************/
+#calculadora {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.3s;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.alumnoForm{
+    text-align: center;
+}
+.caja_alumno {
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.caja_alumno label {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0px;
+    font-weight: bold;
+
+}
+
+.caja_alumno input {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+#notaMedia {
+    width: 97%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/****************************** SECCION CLASES SEGUN LA NOTA ******************************/
+.suspendido {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aprobado {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/****************************** ESTILOS DE LA TABLA ******************************/
+table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin: 100px auto; 
+}
+
+th, td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    height: 70px;
+}
+
+/*clases para suspendio y suspenso en la tabla*/
+.suspendido-tr {
+    background-color: #e68c8c; 
+}
+
+.aprobado-tr {
+    background-color: #c7e68c; 
+}
+
+/****************************** ESTILOS MENU ******************************/
+nav {
+    top: 0;
+    background-color: #343a40;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    left: -320px;
+    transition: left 0.3s;
+    height: 100vh;
+}
+
+nav.show {
+    left: 0;
+    transition: left 0.3s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: translateX(10px);
+}
+
+nav ul li .fa-li {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+/****************************** BOTON DEL NAV ******************************/
+#toggleButton {
+    position: fixed;
+    padding: 10px;
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    transition: left 0.3s;
+}
+
+/****************************** Ocultar calculadora y mostrar historial ******************************/
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/****************************** Transiciones para la tabla y calculadora ******************************/
+#dataTable, #calculadora {
+    transition: opacity 0.4s, visibility 0.4s;
+}

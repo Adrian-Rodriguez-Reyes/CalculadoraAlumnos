@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, 
+		initial-scale=1.0">
+	<title>Table to Excel</title>
+	<!-- jQuery CDN -->
+	<script src=
+"https://code.jquery.com/jquery-3.6.4.min.js">
+	</script>
+	<!-- table2excel jQuery plugin CDN -->
+	<script src=
+"//cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js">
+	</script>
+	<style>
+		#dwnldBtn{
+			background-color: green; 
+			color: #fff; 
+			padding: 10px; 
+			border: none;
+			border-radius: 5px; 
+			margin: 2rem 0;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<table id="dataTable" border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>12345</td>
+					<td>Samyuj Kumar</td>
+					<td>samyuj@example.com</td>
+					<td>123-456-7890</td>
+				</tr>
+				<tr>
+					<td>12346</td>
+					<td>Sanjay Dhillon</td>
+					<td>SDhillon@example.com</td>
+					<td>012-345-6789</td>
+				</tr>
+				<tr>
+					<td>12347</td>
+					<td>Johan Greg</td>
+					<td>gregJo@example.com</td>
+					<td>987-654-3210</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<button id="dwnldBtn">
+				Download Excel Sheet
+		</button>
+	</center>
+	<script>
+		$(document).ready(function () {
+			$('#dwnldBtn').on('click', function () {
+				$("#dataTable").table2excel({
+					filename: "employeeData.xls"
+				});
+			});
+		});
+	</script>
+
+</body>
+
+</html>

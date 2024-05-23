@@ -19,6 +19,8 @@ document.querySelector("#calcularButton").addEventListener("click", function () 
 document.querySelector("#deleteButton").addEventListener("click", function () {
     //usamos la funcion reset y con el form en vez de seleccionar cada input uno a uno
     document.getElementById("alumnoForm").reset();
+    document.querySelector("#notaMedia").remove();
+
 });
 
 
@@ -36,18 +38,19 @@ document.querySelectorAll(".dataStudent").forEach(function(nota) {
 });
 
 
-function showGrade(nota) {
+function showGrade(nombre,nota) {
     let divGrade = document.querySelector("#notaMedia");
     divGrade.classList.remove("aprobado", "suspendido");
-    divGrade.classList.add(nota > 5 ? "aprobado" : "suspendido")
-    divGrade.innerHTML = "<h2> La nota media es: " + nota + "</h2>";
+    let aprobadoSusp = (nota > 5 ? "aprobado" : "suspendido")
+    divGrade.classList.add(aprobadoSusp)
+    divGrade.innerHTML = "<h2> Has " + aprobadoSusp +" "+ nombre + " con una nota de " + nota + "</h2>";
 };
 //FILTO DE LOS DATOS QUE LE LLEGAN AL INPUT ********************************************************************************************************
 function filtrar(nombre, nota1, nota2, nota3, nota4) {
     if (nombre < 1 || nota1 == "" || nota2 == "" || nota3 == "" || nota4 == "") {
         alert("Faltan datos");
     } else {
-        showGrade(media(nota1, nota2, nota3, nota4));
+        showGrade(nombre,media(nota1, nota2, nota3, nota4));
         createTableBody(nombre, nota1, nota2, nota3, nota4, media(nota1, nota2, nota3, nota4));
     }
 };

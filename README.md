@@ -15,3 +15,7 @@
 <img src="https://github.com/Adrian-Rodriguez-Reyes/CalculadoraAlumnos/assets/170672146/293ce61e-a4b8-4b56-ab78-8b1b6215f2b8">
 <h3>Imagen 3</h3>
 <img src="https://github.com/Adrian-Rodriguez-Reyes/CalculadoraAlumnos/assets/170672146/63599133-723b-4206-8353-557250eed303">
+
+<hr/>
+<h4>Enlaces</h4>
+<a href="https://www.jsdelivr.com/package/npm/table2excel">https://www.jsdelivr.com/package/npm/table2excel</a>

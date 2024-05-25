@@ -19,7 +19,7 @@ document.querySelector("#deleteButton").addEventListener("click", function () {
 function showGrade(nombre, nota) {
   let divGrade = document.querySelector("#notaMedia");
   divGrade.classList.remove("aprobado", "suspendido");
-  let aprobadoSusp = nota > 5 ? "aprobado" : "suspendido";
+  let aprobadoSusp = nota >= 5 ? "aprobado" : "suspendido";
   divGrade.classList.add(aprobadoSusp);
   divGrade.innerHTML =
     "<h2> Has " +

@@ -19,3 +19,4 @@
 <hr/>
 <h4>Enlaces</h4>
 <a href="https://www.jsdelivr.com/package/npm/table2excel">https://www.jsdelivr.com/package/npm/table2excel</a>
+<a href="https://docs.fontawesome.com/web/style/lists">https://docs.fontawesome.com/web/style/lists</a>

@@ -2,6 +2,7 @@
 <h2>Codepen Link</h2>
 <a href="https://codepen.io/adrian1019/pen/rNgLPxd">Calculadora normal</a>
 <hr>
+<p>Esta calculadora ya cuenta con alguna mejora como no poder poner letras en los campos de notas y que las notas no puedan ser menor a 0 ni mayor a 10 para evitar errores y que tienen que estar todos los datos rellenados para poder realizar el calculo de la media</p>
 <h3>Imagen 1</h3>
 <img src="https://github.com/Adrian-Rodriguez-Reyes/CalculadoraAlumnos/assets/170672146/a48a3bd1-998f-4fd0-aa3b-41b054ebeef9">
 <h3>Imagen 2</h3>

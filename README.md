@@ -1,7 +1,7 @@
 <h1> Calculadora normal </h1>
 <h2>Codepen Link</h2>
 <a href="https://codepen.io/adrian1019/pen/rNgLPxd">Calculadora normal</a>
-<hr
+<hr>
 <h3>Imagen 1</h3>
 <img src="https://github.com/Adrian-Rodriguez-Reyes/CalculadoraAlumnos/assets/170672146/a48a3bd1-998f-4fd0-aa3b-41b054ebeef9">
 <h3>Imagen 2</h3>

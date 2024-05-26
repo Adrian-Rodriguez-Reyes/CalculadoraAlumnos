@@ -1,5 +1,5 @@
 <h1> Calculadora normal </h1>
-<p> Hice una segunda version solo para investigar algunas funciones mas de js y algun plugin que se podria aplicar en el ejercicio y ser util</p>
+<p> Hice una segunda version solo para investigar algunas funciones mas de js y algun plugin que se podria aplicar en el ejercicio y ser util, la normal es la primera que sale.</p>
 <h2>Codepen Link</h2>
 <a href="https://codepen.io/adrian1019/pen/rNgLPxd">Calculadora normal</a>
 <hr>
